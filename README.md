@@ -8,10 +8,10 @@ Motivation
 I like to have all the data I need for a project in a single, interlinked page and thus thought I'd simply create something just like that.
 
 
-Framework
+Frameworks?
 ----------
 
-I'll be using the [docsify](https://docsify.js.org) documentation generator for this project. It will be hosted here on Github Pages. No promises on if I can complete it, but we'll see.
+I'll be using either the [docsify](https://docsify.js.org) or the [daux](https://daux.io/) documentation generator  for this project. It will be hosted here on Github Pages. No promises on if I can complete it, but we'll see.
 
 
 :orange_book:

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rivals API</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="Description">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<!-- <link rel="manifest" href="/site.webmanifest"> -->
+
+	<!-- Theme: Simple Dark -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">-->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script> -->
+	
+	
+	<!-- Custom theme styles -->
+	<style>
+		:root {
+			--theme-hue       : 51;
+			--theme-saturation: 69%;
+			--theme-lightness : 61%;
+			/*--heading-color   : #e0cb57;*/
+			--heading-color   : #6f42c1;
+			--base-font-size  : 16px;
+		}
+
+		:root {
+			--docsifytabs-border-color: #ededed;
+			--docsifytabs-tab-highlight-color: purple;
+		}
+	</style>
+</head>
+<body>
+	<div id="app"></div>
+
+	<!-- DOCSIFY COMMANDS -->
+	<script>
+	window.$docsify = {
+	name       : 'Rivals Docs',
+	repo       : 'https://github.com/iiviigames/ROADocs',
+	// coverpage  : 'coverpage.md',
+	homepage   : 'README.md',
+	// homepage   : 'https://raw.githubusercontent.com/jhildenbiddle/docsify-themeable/master/README.md',
+	// loadSidebar: '_sidebar.md',
+	// Enables the Cover Page
+	coverpage: false,
+
+	// Shows the Side Bar
+	loadSidebar: '_sidebar.md',
+
+	copyCode: {
+		buttonText : 'Copy code',
+		errorText  : 'Error :(',
+		successText: 'Copied!'
+	},
+
+	themeable: {
+		readyTransition : true, // default
+		responsiveTables: true
+	}
+
+	//	Tab Plugins
+	tabs: {
+		persist			: true,				// default
+		sync				: true,				// default
+		theme				: 'classic',	// default
+		tabComments	: true,				// default
+		tabHeadings	: true				// default
+	}
+	};
+	</script>
+
+	<!-- PLUGINS -->
+	<!-- Docsify -->
+	<script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+	<!-- Themabale Plugin -->
+	<script src="https://cdn.jsdelivr.net/npm/docsify-themeable"></script>
+	<!-- Cargbon Plugin -->
+	<script src="//cdn.jsdelivr.net/npm/docsify-plugin-carbon@1.0.1/index.min.js"></script>
+	
+	
+	<!-- Extensions -->
+	<!-- Tabs  -->
+	<script src="https://cdn.jsdelivr.net/npm/docsify-tabs"></script>
+	<!-- EMOJIS -->
+	<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+	<!-- Code Copy -->
+	<script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+
+	<!-- Languages -->
+	<!-- Lua -->
+	<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-lua.js"></script>
+	<!-- GML -->
+	<script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/components/prism-gml.js"></script>
+
+</body>
+</html>
