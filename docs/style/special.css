@@ -1,0 +1,27 @@
+
+code .comment, .code-line .comment {color: #776b9e;}
+
+.code-line {
+
+    background-color: #34246b;
+    border-radius: 5px;
+    padding: 2px;
+    white-space: nowrap;
+    font-family: "Fira Code", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+}
+.type {
+    color: #c3e88d;
+}
+
+.function {
+    color: #c792ea;
+}
+
+.variable {
+    color: #ffcb6b;
+}
+
+.macro {
+    color: #f78c6b;
+}

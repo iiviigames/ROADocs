@@ -1,0 +1,18 @@
+<p>A sprite should be a strip of animation frames, sequenced one after another from the left to the right. All frames should have the same dimensions. Sprites should be named in the following pattern: <span class="code-line"><span class="type">[name]</span>_strip<span class="type">[frames]</span>.png</span>. For example: <span class="code-line">walk_strip8.png</span>, telling the parser the animation has 8 frames.</p>
+<p>To convert a gif into a sprite sheet, you can either use Game Maker to import and export it as a .png or use an online converter like <a href="https://ezgif.com/gif-to-sprite" target="_blank" rel="noopener noreferrer">this one</a> (use the "Stack Horizontally" option to make sure everything is on a single row).</p>
+<div class="important">If you want the sprite to replace one of the existing character states without any scripting, you should <a href="https://www.rivalsofaether.com/workshop/animation-names/">name it accordingly</a>.</div>
+<p>Hurtbox sprites for non-attack states (<span class="code-line">_hurtbox</span>, <span class="code-line">_crouchbox</span>, <span class="code-line">_hurtbox_air</span>, <span class="code-line">_hitstun_hurtbox</span>) use rectangular collision. Hurtbox sprites for attacks (<span class="code-line">_hurt</span> sprites) use precise collision instead.</p>
+<p>The origin for all sprites is set to top left (0, 0) by default. To help place origins correctly, use the <a href="https://github.com/dfornace/workshophelper" target="_blank" rel="noopener noreferrer">Rivals Workshop Helper</a>.</p>
+<p>You can directly reference any custom sprite by calling <span class="code-line"><span class="function">sprite_get(</span> name<span class="type">:string</span> <span class="function">)</span></span> in <span class="code-line">animation.gml</span>. For example, forcing walk animation to use the dash sprite instead:</p>
+<p><code>if (<span class="variable">state</span> == <span class="macro">PS_WALK</span>) {<br>
+<span class="variable">sprite_index</span> = <span class="function">sprite_get(</span> "dash" <span class="function">);</span><br>
+}</code></p>
+<p>(<a href="https://www.rivalsofaether.com/workshop/player-states">reference</a> on available player states).</p>
+<p>You can also change offset and bounding boxes for your sprites in <span class="code-line">load.gml</span>. For example:</p>
+<p><code><span class="comment">// changing offset of the jump sprite to [94, 138]:</span><br>
+<span class="function">sprite_change_offset(</span> "jump", 94, 138 <span class="function">);</span><br>
+<span class="comment">// making it precise:</span><br>
+<span class="function">sprite_change_collision_mask(</span> "jump", true, 0, 0, 0, 0, 0, 0 <span class="function">);</span><br>
+</code></p>
+<h3 class="manual">Hit Particles</h3>
+<p>Hit Particles have a couple differences to how normal sprites work; visit the <a href="https://rivalsofaether.com/workshop/hit-particles/">page for Hit Particles</a> to learn more about how to change those for your character.</p>
