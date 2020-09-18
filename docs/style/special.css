@@ -1,27 +1,92 @@
+.argdesc
+
 
 code .comment, .code-line .comment {color: #776b9e;}
 
 .code-line {
-
-    background-color: #34246b;
-    border-radius: 5px;
-    padding: 2px;
-    white-space: nowrap;
-    font-family: "Fira Code", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-
+	font-size: 13px;
+	background-color: #282a2e;
+	border-radius: 5px;
+	padding: 2px;
+	white-space: nowrap;
+	font-family: "Fira Code", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 .type {
-    color: #c3e88d;
+	color: #c3e88d;
 }
 
 .function {
-    color: #c792ea;
+	color: #c792ea;
 }
 
 .variable {
-    color: #ffcb6b;
+	color: #ffcb6b;
 }
 
 .macro {
-    color: #f78c6b;
+	color: #f78c6b;
 }
+
+.lang-python {
+	color: #f78c6b;
+	display: border-box;
+	background: #1f282d;
+	padding: 0.5em 2em 0.2em 3em;
+	border-radius: 4px;
+}
+
+/*DEFAULT SYNTAX HIGHLIGHTING*/
+/*:root {
+	--code-theme-background: #282a2e;
+	--code-theme-comment: #516e7a;
+	--code-theme-function: #f07178;
+	--code-theme-keyword: #c2e78c;
+	--code-theme-operator: #ffcb6b;
+	--code-theme-punctuation: #89ddff;
+	--code-theme-selection: rgba(255, 255, 255, 0.2);
+	--code-theme-selector: #ffcb6b;
+	--code-theme-tag: #f07178;
+	--code-theme-text: #f3f3f3;
+	--code-theme-variable: #ffcb6b
+}
+
+DEFAULT PRE SETTINGS
+	.markdown-section code[class*="lang-"], .markdown-section pre[data-lang] {
+		font-family: var(--code-font-family);
+		font-size: var(--code-font-size);
+		font-weight: var(--code-font-weight);
+		letter-spacing: normal;
+		line-height: var(--code-block-line-height);
+		-moz-tab-size: var(--code-tab-size);
+		-o-tab-size: var(--code-tab-size);
+		tab-size: var(--code-tab-size);
+		text-align: left;
+		white-space: pre;
+		word-spacing: normal;
+		word-wrap: normal;
+		word-break: normal;
+		-webkit-hyphens: none;
+		-ms-hyphens: none;
+		hyphens: none
+	}
+	DEFAULTS PRE VARIABLES
+	:root {
+		--content-max-width: 55em;
+		--blockquote-background: var(--mono-tint3);
+		--blockquote-border-style: solid;
+		--blockquote-border-radius: var(--border-radius-m);
+		--blockquote-em-font-weight: normal;
+		--blockquote-font-weight: normal;
+		--code-font-family: Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+		--code-font-size: calc(var(--font-size-m) * 0.95);
+		--code-font-weight: normal;
+		--code-tab-size: 2;
+		--code-block-border-radius: var(--border-radius-m);
+		--code-block-line-height: var(--base-line-height);
+		--code-block-margin: 1em 0;
+		--code-block-padding: 1.75em 1.5em 1.5em 1.5em;
+		--code-inline-background: var(--code-theme-background);
+		--code-inline-border-radius: var(--border-radius-s);
+		--code-inline-color: var(--code-theme-text);
+		--code-inline-margin: 0 0.15em;
+	}*/

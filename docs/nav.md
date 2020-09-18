@@ -2,13 +2,15 @@
 
 [Home](/)
 [Getting Started](/intro/beginner)
-[Configuration](/code/config_ini)
+[Configuration](/intro/config_ini)
 
 
 
 **Graphics**
- [Sprites](/overview/sprites)
+ [Sprites](code/overview/sprites)
 
+**Code**
+[Player States](/code/roa/player_states)
 
 
 **Functions**
@@ -17,6 +19,8 @@
 [ROA API](/code/roa_api)
 
 **Reference**
-  - [asset_get](/code/roa/asset_get)
-  - [sprite_get](/code/roa/sprite_get)
+  - [asset_get](/code/api/asset_get)
+  - [set_state](/code/api/set_state)
+  - [sound_get](/code/api/sound_get)
+  - [sprite_get](/code/api/sprite_get)
 

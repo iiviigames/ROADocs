@@ -1,0 +1,115 @@
+<h3 class="manual">States</h3>
+<p>Use these values when changing states with <span class="code-line"><span class="function">set_state(</span> state <span class="function">)</span></span> &nbsp;<a href="https://www.rivalsofaether.com/workshop/set_state">Reference</a>
+</p>
+<p>To check the state of a character, use the <span class="code-line">state</span> variable.</p>
+<div style="overflow: hidden;">
+<div class="su-column su-column-size-1-2">
+<div class="su-column-inner su-u-clearfix su-u-trim">
+<code><span class="macro">PS_WALK<br>
+PS_WALK_TURN<br>
+PS_DASH_START<br>
+PS_DASH<br>
+PS_DASH_STOP<br>
+PS_DASH_TURN<br>
+PS_WAVELAND</span><br>
+</code><br>
+<code><span class="macro">PS_AIR_DODGE<br>
+PS_PARRY_START</span><span class="note symbol"></span><br>
+<span class="comment">can transition into rolls or parry, depending on direction held</span><br>
+<span class="macro">PS_PARRY<br>
+PS_ROLL_BACKWARD<br>
+PS_ROLL_FORWARD<br>
+PS_TECH_GROUND<br>
+PS_TECH_BACKWARD<br>
+PS_TECH_FORWARD<br>
+PS_WALL_TECH</span><br>
+</code><br>
+<code><span class="macro">PS_WRAPPED<br>
+PS_FROZEN</span><br>
+</code>
+</div>
+</div>
+<div class="su-column su-column-size-1-2">
+<div class="su-column-inner su-u-clearfix su-u-trim">
+<code><span class="macro">PS_IDLE<br>
+PS_IDLE_AIR<br>
+PS_CROUCH<br>
+PS_JUMPSQUAT<br>
+PS_FIRST_JUMP<br>
+PS_DOUBLE_JUMP<br>
+PS_WALL_JUMP<br>
+PS_LAND</span><br>
+</code><br>
+<code><span class="macro">PS_ATTACK_AIR<br>
+PS_ATTACK_GROUND<br>
+PS_LANDING_LAG</span><br>
+</code><br>
+<code><span class="macro">PS_HITSTUN<br>
+PS_HITSTUN_LAND<br>
+PS_TUMBLE<br>
+PS_PRATFALL<br>
+PS_PRATLAND</span><br>
+</code><br>
+<code><span class="macro">PS_SPAWN<br>
+PS_RESPAWN<br>
+PS_DEAD</span><br>
+</code>
+</div>
+</div>
+</div>
+<div>
+<h3 class="manual" style="margin-top: 20px;"><a id="state-categories"></a>State Categories</h3>
+<p>These values are set automatically depending on the state and should not be manually changed. To check a character's state category, use the <span class="code-line">state_cat</span> variable.</p>
+<div style="overflow: hidden;">
+<div class="su-column su-column-size-1-2">
+<div class="su-column-inner su-u-clearfix su-u-trim">
+<code class="macro">SC_HITSTUN <br>
+<span class="tab">PS_HITSTUN</span><br>
+<span class="tab">PS_HITSTUN_LAND</span><br>
+<span class="tab">PS_WRAPPED</span><br>
+<span class="tab">PS_FROZEN</span><br>
+</code><br>
+<code><span class="macro">SC_AIR_NEUTRAL <br>
+<span class="tab"></span>PS_IDLE_AIR<br>
+<span class="tab"></span>PS_FIRST_JUMP<br>
+<span class="tab"></span>PS_DOUBLE_JUMP<br>
+<span class="tab"></span>PS_TUMBLE<br>
+</span></code><br>
+<code><span class="macro">SC_AIR_COMMITTED <br>
+<span class="tab"></span>PS_WALL_JUMP<br>
+<span class="tab"></span>PS_ATTACK_AIR<br>
+<span class="tab"></span>PS_PRATFALL<br>
+<span class="tab"></span>PS_AIR_DODGE<br>
+<span class="tab"></span>PS_WALL_TECH<br>
+<span class="tab"></span>PS_RESPAWN<br>
+<span class="tab"></span>PS_DEAD<br>
+</span></code>
+</div>
+</div>
+<div class="su-column su-column-size-1-2">
+<div class="su-column-inner su-u-clearfix su-u-trim">
+<code><span class="macro">SC_GROUND_NEUTRAL <br>
+<span class="tab"></span>PS_IDLE<br>
+<span class="tab"></span>PS_CROUCH<br>
+<span class="tab"></span>PS_WALK</span><br>
+</code><br>
+<code><span class="macro">SC_GROUND_COMMITTED <br>
+<span class="tab"></span>PS_LAND<br>
+<span class="tab"></span>PS_SPAWN<br>
+<span class="tab"></span>PS_PRATLAND<br>
+<span class="tab"></span>PS_LANDING_LAG<br>
+<span class="tab"></span>PS_WALK_TURN<br>
+<span class="tab"></span>PS_ATTACK_GROUND<br>
+<span class="tab"></span>PS_WAVELAND<br>
+<span class="tab"></span>PS_DASH_START<br>
+<span class="tab"></span>PS_DASH<br>
+<span class="tab"></span>PS_DASH_TURN<br>
+<span class="tab"></span>PS_DASH_STOP<br>
+<span class="tab"></span>PS_PARRY_START<br>
+<span class="tab"></span>PS_PARRY<br>
+<span class="tab"></span>PS_TECH_GROUND<br>
+<span class="tab"></span>PS_TECH_BACKWARD<br>
+<span class="tab"></span>PS_TECH_FORWARD<br>
+<span class="tab"></span>PS_ROLL_BACKWARD<br>
+<span class="tab"></span>PS_ROLL_FORWARD<br>
+<span class="tab"></span>PS_JUMPSQUAT

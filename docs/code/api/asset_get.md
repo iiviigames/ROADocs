@@ -13,11 +13,14 @@ To get the index of a custom (loaded with your character) asset, use
 
 `sound_get( sound )` [Reference](/code/roa/sound_get) functions instead.
 
+<span class='argdesc'>
+
 | Argument| Type    | Description                                                                  |
 |---------|---------|------------------------------------------------------------------------------|
 |asset    |string   | The name of the game asset to get the index of Example, called from bair.gml:|
 
 
+</span>
 
 ```gml
 // sets the sound effect assigned to the 3rd bair window:

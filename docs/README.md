@@ -19,6 +19,7 @@ This documentation aims to give you the tools needed to build any possible chara
 
 + [@danfornace](https://twitter.com/DanFornace) - _Don King of Underground Animal Combat_
 + [@etalus](https://twitter.com/Etalus) - _The Muscle_
++ [@mightypancake](https://github.com/pancake-library/pancake/) - _[The design inspiration](http://mightypancake.games/#/tutorials/Getting_Started)!_
 
 > Note: Rivals has their own docs found [here at their site](https://rivalsofaether.com/workshop), and this work is in no way meant to be taken as the words of the devs. Any content retrieved from their page was done with permission by the creative minds behind the orginal docs!
 
